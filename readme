@@ -1,3 +1,6 @@
+A game where two people tap their side of the screen to collecion the points
+that are increasing in the middle.
+
 Built using:
 Cython 0.20.2
 Pygame 1.9.1
