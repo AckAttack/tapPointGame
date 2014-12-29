@@ -1,14 +1,20 @@
 <TapPointGame>:
-#    Label:
-#        text: "Hello World"
+    #Left side
+    canvas.before:
+        Color:
+            #Blue
+            rgba: 0, 0, 0.75, 1 
+        Rectangle:
+            pos: 0, 0
+            size: self.center_x, self.height
 
-    canvas:
+    #Right Side
+        Color:
+            #Red
+            rgba: 0.75, 0, 0, 1 
         Rectangle:
-            pos: self.center_x-1, 0
-            size: 2, self.height /2 - 60
-        Rectangle:
-            pos: self.center_x-1, self.height /2 + 60
-            size: 2, self.height /2 - 60
+            pos: self.center_x, 0
+            size: self.center_x, self.height
 
     Label:
         font_size: 100
@@ -27,5 +33,3 @@
         center_x: root.width * 3 / 4
         top: root.top - 50
         text: str(root.player2)
-    
-
